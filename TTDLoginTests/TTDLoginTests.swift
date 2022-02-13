@@ -10,10 +10,11 @@ import XCTest
 
 class TTDLoginTests: XCTestCase {
     
-    var vm : ViewController?
+    var vm : Text?
 
     override func setUpWithError() throws {
-        vm = ViewController()
+        vm = Text()
+       
     }
 
     override func tearDownWithError() throws {
@@ -22,10 +23,7 @@ class TTDLoginTests: XCTestCase {
 
     func testForText(){
         
-        let text = vm?.userTField.text?.count
-        
-        XCTAssertEqual(text, nil)
-        
+        XCTAssertTrue(self.vm?.validateTextFieldCount(text: "awe"))
         
     }
 }

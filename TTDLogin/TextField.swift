@@ -7,20 +7,25 @@
 
 import Foundation
 
+enum TextFieldErrors : String, Error {
+    case NoText
+    case NotEnoughLetters
+}
+
 
 struct Text {
     var arr = ""
     
-    func validateTextFieldIsEmpty(text:String?)->Bool{
+    func validateTextFieldIsEmpty(text:String?)throws->Bool{
         
         guard let text = text, !text.isEmpty else {
-            return false
+            throw TextFieldErrors.NoText
         }
         return true
     }
     
     
-    func validateTextFieldCount(text:String?)->Bool{
+    func validateTextFieldCount(text:String?)throws->Bool?{
         
         guard let text = text else {
             return false
@@ -28,7 +33,7 @@ struct Text {
         
         
         if text.count < 7 {
-            return false
+            throw TextFieldErrors.NotEnoughLetters
         }else{
             return true
             

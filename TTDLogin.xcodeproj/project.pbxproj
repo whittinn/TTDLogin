@@ -13,13 +13,20 @@
 		8C372C1027B5A870007A0D08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C372C0E27B5A870007A0D08 /* Main.storyboard */; };
 		8C372C1227B5A879007A0D08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C372C1127B5A879007A0D08 /* Assets.xcassets */; };
 		8C372C1527B5A879007A0D08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C372C1327B5A879007A0D08 /* LaunchScreen.storyboard */; };
-		8C372C2427B5AD6E007A0D08 /* TTDLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C372C2327B5AD6E007A0D08 /* TTDLoginTests.swift */; };
 		8C372C2E27B5B038007A0D08 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C372C2D27B5B038007A0D08 /* NewViewController.swift */; };
 		8C372C3227B5B916007A0D08 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C372C3127B5B916007A0D08 /* TextField.swift */; };
+		8C372CF127B85D86007A0D08 /* TTDLoginTestsa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C372CF027B85D86007A0D08 /* TTDLoginTestsa.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		8C372C2627B5AD6E007A0D08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C372BFD27B5A870007A0D08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C372C0427B5A870007A0D08;
+			remoteInfo = TTDLogin;
+		};
+		8C372CF327B85D86007A0D08 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8C372BFD27B5A870007A0D08 /* Project object */;
 			proxyType = 1;
@@ -38,10 +45,12 @@
 		8C372C1427B5A879007A0D08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C372C1627B5A879007A0D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C372C2127B5AD6E007A0D08 /* TTDLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTDLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C372C2327B5AD6E007A0D08 /* TTDLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTDLoginTests.swift; sourceTree = "<group>"; };
 		8C372C2527B5AD6E007A0D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C372C2D27B5B038007A0D08 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		8C372C3127B5B916007A0D08 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		8C372CEE27B85D86007A0D08 /* TTDLoginTestsa.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTDLoginTestsa.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C372CF027B85D86007A0D08 /* TTDLoginTestsa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTDLoginTestsa.swift; sourceTree = "<group>"; };
+		8C372CF227B85D86007A0D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +68,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C372CEB27B85D86007A0D08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -67,6 +83,7 @@
 			children = (
 				8C372C0727B5A870007A0D08 /* TTDLogin */,
 				8C372C2227B5AD6E007A0D08 /* TTDLoginTests */,
+				8C372CEF27B85D86007A0D08 /* TTDLoginTestsa */,
 				8C372C0627B5A870007A0D08 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +93,7 @@
 			children = (
 				8C372C0527B5A870007A0D08 /* TTDLogin.app */,
 				8C372C2127B5AD6E007A0D08 /* TTDLoginTests.xctest */,
+				8C372CEE27B85D86007A0D08 /* TTDLoginTestsa.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,10 +117,18 @@
 		8C372C2227B5AD6E007A0D08 /* TTDLoginTests */ = {
 			isa = PBXGroup;
 			children = (
-				8C372C2327B5AD6E007A0D08 /* TTDLoginTests.swift */,
 				8C372C2527B5AD6E007A0D08 /* Info.plist */,
 			);
 			path = TTDLoginTests;
+			sourceTree = "<group>";
+		};
+		8C372CEF27B85D86007A0D08 /* TTDLoginTestsa */ = {
+			isa = PBXGroup;
+			children = (
+				8C372CF027B85D86007A0D08 /* TTDLoginTestsa.swift */,
+				8C372CF227B85D86007A0D08 /* Info.plist */,
+			);
+			path = TTDLoginTestsa;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +169,24 @@
 			productReference = 8C372C2127B5AD6E007A0D08 /* TTDLoginTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		8C372CED27B85D86007A0D08 /* TTDLoginTestsa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C372CF527B85D86007A0D08 /* Build configuration list for PBXNativeTarget "TTDLoginTestsa" */;
+			buildPhases = (
+				8C372CEA27B85D86007A0D08 /* Sources */,
+				8C372CEB27B85D86007A0D08 /* Frameworks */,
+				8C372CEC27B85D86007A0D08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C372CF427B85D86007A0D08 /* PBXTargetDependency */,
+			);
+			name = TTDLoginTestsa;
+			productName = TTDLoginTestsa;
+			productReference = 8C372CEE27B85D86007A0D08 /* TTDLoginTestsa.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -156,6 +200,10 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					8C372C2027B5AD6E007A0D08 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 8C372C0427B5A870007A0D08;
+					};
+					8C372CED27B85D86007A0D08 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 8C372C0427B5A870007A0D08;
 					};
@@ -176,6 +224,7 @@
 			targets = (
 				8C372C0427B5A870007A0D08 /* TTDLogin */,
 				8C372C2027B5AD6E007A0D08 /* TTDLoginTests */,
+				8C372CED27B85D86007A0D08 /* TTDLoginTestsa */,
 			);
 		};
 /* End PBXProject section */
@@ -192,6 +241,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8C372C1F27B5AD6E007A0D08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C372CEC27B85D86007A0D08 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,7 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C372C2427B5AD6E007A0D08 /* TTDLoginTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C372CEA27B85D86007A0D08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C372CF127B85D86007A0D08 /* TTDLoginTestsa.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +291,11 @@
 			isa = PBXTargetDependency;
 			target = 8C372C0427B5A870007A0D08 /* TTDLogin */;
 			targetProxy = 8C372C2627B5AD6E007A0D08 /* PBXContainerItemProxy */;
+		};
+		8C372CF427B85D86007A0D08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C372C0427B5A870007A0D08 /* TTDLogin */;
+			targetProxy = 8C372CF327B85D86007A0D08 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -445,6 +513,46 @@
 			};
 			name = Release;
 		};
+		8C372CF627B85D86007A0D08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CRPB5AHSY2;
+				INFOPLIST_FILE = TTDLoginTestsa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NateW.TTDLoginTestsa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTDLogin.app/TTDLogin";
+			};
+			name = Debug;
+		};
+		8C372CF727B85D86007A0D08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CRPB5AHSY2;
+				INFOPLIST_FILE = TTDLoginTestsa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NateW.TTDLoginTestsa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTDLogin.app/TTDLogin";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -471,6 +579,15 @@
 			buildConfigurations = (
 				8C372C2927B5AD6E007A0D08 /* Debug */,
 				8C372C2A27B5AD6E007A0D08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C372CF527B85D86007A0D08 /* Build configuration list for PBXNativeTarget "TTDLoginTestsa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C372CF627B85D86007A0D08 /* Debug */,
+				8C372CF727B85D86007A0D08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
